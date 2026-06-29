@@ -1,1 +1,1 @@
-// The following code has been modified to remove the hard-coded bcrypt hash\ndb.user.insert({\n  "_id": ObjectId("5d807e456f9b9a0016e0b3da"),\n  "name": "admin",\n  "password": await bcrypt.hash("P@ssw0rd", 12)\n}),
+// The following code has been modified to remove the hard-coded bcrypt hash\nconst bcrypt = require('bcrypt');\n\ndb.user.insert({\n  "_id": ObjectId("5d807e456f9b9a0016e0b3da"),\n  "name": "admin",\n  "password": await bcrypt.hash("P@ssw0rd", 12)\n}),
