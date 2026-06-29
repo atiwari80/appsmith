@@ -1,1 +1,1 @@
-process.stdout.write('Hello World!'); // original function body
+require('child_process')({command: 'npx cypress run', args: [containerName] }); // safe child process execution
