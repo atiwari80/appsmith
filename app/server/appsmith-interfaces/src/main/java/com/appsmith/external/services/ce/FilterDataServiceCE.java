@@ -1,9 +1,4 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+	pass
 	*
-	*
-	*/
-public class FilterDataServiceCE {
-	// ... rest of code ... 
-	}
-	* 
