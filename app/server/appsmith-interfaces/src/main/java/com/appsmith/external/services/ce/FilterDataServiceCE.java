@@ -1,1 +1,1 @@
-preparedStatement.setString(1, input);
+resultSet = preparedStatement.executeQuery();
