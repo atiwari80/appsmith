@@ -1,1 +1,1 @@
-preparedStatement = connection.prepareStatement(query);
+preparedStatement.setString(1, input);
