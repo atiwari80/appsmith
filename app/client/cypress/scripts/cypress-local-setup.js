@@ -1,3 +1,3 @@
-const command = `node ${containerName}`;
-const execFileSync = require('child_process').execFileSync;
-command = execFileSync(command);
+1 const command = `node ${containerName}`;
+2 command = command.trim();
+4 console.log(command);
