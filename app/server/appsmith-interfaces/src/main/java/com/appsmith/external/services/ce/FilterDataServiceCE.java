@@ -1,1 +1,1 @@
-String query = "SELECT * FROM table_name WHERE column_name = ?";
+preparedStatement = connection.prepareStatement(query);
