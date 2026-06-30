@@ -1,4 +1,21 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
-	pass
 	*
+	*
+	*/
+public class FilterDataServiceCE {
+	// ... rest of code ... //
+	}
+	* 
+		
+		/*
+	*
+	* 
+	*/
+
+public void execute() {
+	connection ∙\u2219= connection.prepareStatement();
+	// ...
+
+	}
+	* 
