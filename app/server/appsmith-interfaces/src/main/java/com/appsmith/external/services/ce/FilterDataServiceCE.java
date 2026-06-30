@@ -1,1 +1,1 @@
-// Old code\n            // Removed line: preparedStatement.executeUpdate();\n             \n             //\n             // Updated line: \n             preparedStatement.executeUpdate();\n             \n           \"}
+// Old code\n             // Removed line: preparedStatement = connection.prepareStatement("\n                \n                SELECT " + columnNames.toString() + " FROM 
