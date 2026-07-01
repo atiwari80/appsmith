@@ -1,1 +1,2 @@
-import axios from 'axios';\nconst exec = async (command: string) => {\n  const response = await axios.get(`https://api.example.com/run-command/${command}`);\n  return response.data;\n};\nexport { exec };
+const spawn = require('child_process').spawn; const command = spawn(command, ["--inspect","--trace-deprecation"]);
+ const command = spawn('node', [command]);
