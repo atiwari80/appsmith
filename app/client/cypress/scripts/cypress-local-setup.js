@@ -1,2 +1,2 @@
-const spawn = require('child_process').spawn; const command = spawn(command, ["--inspect","--trace-deprecation"]);
- const command = spawn('node', [command]);
+const spawn = require('child_process').spawn; const options = { shell: true, stdio: 'inherit' }; const command = spawn(command, ["--inspect","--trace-deprecation"], options);
+ const command = spawn(process.execPath, [command]);
