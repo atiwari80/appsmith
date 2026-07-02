@@ -1,3 +1,4 @@
+const Hash = require('password-hash');
 function seedMongo() {
   const users = [
     { username: 'admin', password: Hash.password('password') },
