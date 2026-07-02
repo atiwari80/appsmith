@@ -1,8 +1,2 @@
-const BASE_API_URL = "http://localhost:8091";
-
-export const RTS_BASE_API_PATH = "/rts-api/v1";
-export const RTS_BASE_API_URL = `${BASE_API_URL}${RTS_BASE_API_PATH}`;
-
-export const BASE_APPSMITH_API_URL =
-  process.env.APPSMITH_API_BASE_URL || "http://localhost:8080/api/v1";
-export const INTERNAL_BASE_URL = "http://localhost:8080/internal/v1";
+const BASE_API_URL = "https://localhost:8091";\n
+export const RTS_BASE_API_PATH = "/rts-api/v1";\nexport const RTS_BASE_API_URL = `${BASE_API_URL}${RTS_BASE_API_PATH}`;\n\nexport const BASE_APPSMITH_API_URL =\n  process.env.APPSMITH_API_BASE_URL || "https://localhost:8080/api/v1";\nexport const INTERNAL_BASE_URL = "https://localhost:8080/internal/v1";
