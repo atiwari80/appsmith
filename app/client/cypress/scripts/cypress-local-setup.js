@@ -1,1 +1,9 @@
-function execCommand(command, options) {\n  return new Promise((resolve, reject) => {\n    const sanitizedCommand = shellQuote(command);\n    exec(sanitizedCommand, options, (error, stdout, stderr) => {\n      if (error) {\n        reject(error);\n      } else {\n        resolve({ stdout, stderr });\n      }\n    });\n  });\n}
+function execCommand(command, options) {
+  const sanitizedCommand = shellQuote(command);
+  const child = spawnSync('childProcess', ['execFileSync', sanitizedCommand], {shell: true});
+  if (child.status == 0) {
+    resolve({ stdout: child.stdout, stderr: null });
+  } else {
+    reject(child.stderr);
+  }
+}
