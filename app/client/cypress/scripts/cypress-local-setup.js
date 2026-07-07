@@ -1,5 +1,1 @@
-    return containerName
-  } catch (error) {
-    return 'ERROR: ' + error.message
-  }
-}
+const childProcess = require('child_process'); // Replaced with require statement to avoid function arguments
