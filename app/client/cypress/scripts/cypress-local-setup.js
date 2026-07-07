@@ -1,3 +1,4 @@
-const { exec } = require('child_process'); // Removed function call
-const containerName = 'example-container';
-// ... Rest of the code remains the same ... 
+const getContainerName = (containerName: string) => {
+  try {
+    // Removed the child_process.exec call
+    // ... Rest of the code remains the same ... 
