@@ -1,13 +1,9 @@
-// Process.argv will be modified to be the arguments passed to the executable when it starts.
-process.argv.push(`${containerName}`)
-process.argv.push('--headless')
-process.argv.push('--no-sandbox')
-process.execPath = require('process').execPath
-const childProcess = require('child_process')
-const cypress = require('cypress')
-
-function runCypress(containerName) {
-  const cypressArgs = ['run', '--config-file', 'run/cypress.config.js', 'integration']
-  console.log('runCypress', process.execPath, cypressArgs.join(' '))
-  process.execFile(process.execPath, cypressArgs)
-}
+const { exec } = require('child_process');
+  const command = 'npm run cypress run';
+  try {
+    const child = exec(command);
+    console.log(child);
+  }
+  catch (error) {
+    console.error(new Error(`Failed to execute command: ${error}`));
+  }
