@@ -1,5 +1,3 @@
-46  // Create an instance of Axios with TLS disabled to test non-proxy scenario
-47  const axiosInstance = axios.create({
-48  baseURL: process.env.TLS_DISABLED_BASE_URL,
-49    httpsAgent: new https.Agent({
-50    rejectUnauthorized: false,
+46   await axios.get("https://localhost:65534", { timeout: 300 }).catch(() => null);
+47   await axios.get("https://[::1]:65534", { timeout: 300 }).catch(() => null);
+48   // ... Rest of the code remains unchanged ...
