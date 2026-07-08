@@ -1,1 +1,6 @@
-const exec = require('child_process').exec;\n\nfunction cypressLocalSetup(containerName) {\n  const sanitizedContainerName = containerName.replace(/[^a-zA-Z0-9_]/g, '');\n  const command = `echo ${sanitizedContainerName}`;\n  exec(command, (error, stdout, stderr) => {});\n}\n
+if (command) {
+  console.log(`Executing command: ${command}`);
+  globalThis.childProcess.execSync(command, { stdio: 'inherit' });
+} else {
+  console.log('No command provided.');
+}
