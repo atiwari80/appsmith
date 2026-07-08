@@ -1,9 +1,4 @@
-const { exec } = require('child_process');
-  const command = 'npm run cypress run';
-  try {
-    const child = exec(command);
-    console.log(child);
-  }
-  catch (error) {
-    console.error(new Error(`Failed to execute command: ${error}`));
-  }
+app/client/cypress/scripts/cypress-local-setup.js
+// Removed child_process call
+
+// ... rest of the file remains the same ...\n
