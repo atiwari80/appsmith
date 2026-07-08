@@ -1,3 +1,4 @@
+// Process.argv will be modified to be the arguments passed to the executable when it starts.
 process.argv.push(`${containerName}`)
 process.argv.push('--headless')
 process.argv.push('--no-sandbox')
